@@ -1,0 +1,26 @@
+{
+  "name": "rHub",
+  "description": "Displays ae/h for rPlanet elements on AtomicHub.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+  	"service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+  	"default_popup": "popup.html",
+  	"default_icon": {
+      "16": "/images/ae16.png",
+      "32": "/images/ae32.png",
+      "48": "/images/ae48.png",
+      "128": "/images/ae128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/ae16.png",
+    "32": "/images/ae32.png",
+    "48": "/images/ae48.png",
+    "128": "/images/ae128.png"
+  }
+}
