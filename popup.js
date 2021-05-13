@@ -893,7 +893,7 @@ function injectTable() {
     for (let i = 0; i < cardList.length; i++) {
       if (typeof(cardList[i].children[0].children[0].children[0]) !== "undefined") {
         var raw_img_url = cardList[i].children[0].children[0].children[0].children[0].src
-        var card_name = cardList[i].children[1].children[1].children[0].getInnerHTML()
+        var card_name = cardList[i].children[1].children[1].children[0].innerText
         switch (raw_img_url) {
           case (raw_img_url.match(/uncommon/) || {}).input:
            var rarity = "Uncommon"
