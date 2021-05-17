@@ -872,6 +872,70 @@ function injectTable() {
       "Epic": "32,460",
       "Legendary": "67,625",
       "Mythic": "270,500"
+    },
+    "lens": {
+      "Common": "128.8",
+      "Uncommon": "386.3",
+      "Rare": "772.5",
+      "Epic": "1,545",
+      "Legendary": "3,218.8",
+      "Mythic": "12,875"
+    },
+    "microscope": {
+      "Common": "357.5",
+      "Uncommon": "1,072.5",
+      "Rare": "2,145",
+      "Epic": "4,290",
+      "Legendary": "8,937.5",
+      "Mythic": "35,750"
+    },
+    "prism": {
+      "Common": "612.5",
+      "Uncommon": "1,837.5",
+      "Rare": "3,675",
+      "Epic": "7,350",
+      "Legendary": "15,312.5",
+      "Mythic": "61,250"
+    },
+    "prism": {
+      "Common": "612.5",
+      "Uncommon": "1,837.5",
+      "Rare": "3,675",
+      "Epic": "7,350",
+      "Legendary": "15,312.5",
+      "Mythic": "61,250"
+    },
+    "smoke": {
+      "Common": "42.5",
+      "Uncommon": "127.5",
+      "Rare": "255",
+      "Epic": "510",
+      "Legendary": "1,062.5",
+      "Mythic": "4,250"
+    },
+    "pipe": {
+      "Common": "661.3",
+      "Uncommon": "1,983.8",
+      "Rare": "3,967.5",
+      "Epic": "7,935",
+      "Legendary": "16,531.3",
+      "Mythic": "66,125"
+    },
+    "reed pipe": {
+      "Common": "695",
+      "Uncommon": "2,084.8",
+      "Rare": "4169.3",
+      "Epic": "8,338.3",
+      "Legendary": "17,371.5",
+      "Mythic": "69,485.3"
+    },
+    "music": {
+      "Common": "1,595",
+      "Uncommon": "4,784.3",
+      "Rare": "9,568",
+      "Epic": "19,136",
+      "Legendary": "39,866.8",
+      "Mythic": "159,466"
     }
   }
   function updateListener(){
@@ -894,6 +958,9 @@ function injectTable() {
       if (typeof(cardList[i].children[0].children[0].children[0]) !== "undefined") {
         var raw_img_url = cardList[i].children[0].children[0].children[0].children[0].src
         var card_name = cardList[i].children[1].children[1].children[0].innerText
+        var raw_price = cardList[i].children[1].children[1].children[1].innerText
+        var clean_price = parseFloat(raw_price.split("WAX")[0]);
+        console.log(clean_price);
         switch (raw_img_url) {
           case (raw_img_url.match(/uncommon/) || {}).input:
            var rarity = "Uncommon"
@@ -919,18 +986,35 @@ function injectTable() {
         }
         if (elementJSON[card_name.toLowerCase()]) {
           parent = cardList[i].children[0].children[0].children[0];
-          var newDiv = document.createElement('div');
-          parent.appendChild(newDiv);
-          newDiv.innerHTML = elementJSON[card_name.toLowerCase()][rarity];
-          newDiv.style.position = "absolute";
-          newDiv.style.margin = "auto";
-          newDiv.style.left = 0;
-          newDiv.style.right = 0;
-          newDiv.style.top = "-3.5px";
-          newDiv.style.letterSpacing = "2px";
-          newDiv.style.fontSize = "12px";
-          newDiv.style.fontWeight = 900;
-          newDiv.style.textShadow = "0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black";
+          var aetherDiv = document.createElement('div');
+          var ratioDiv = document.createElement('div');
+          parent.appendChild(aetherDiv);
+          parent.appendChild(ratioDiv);
+          aether_value = elementJSON[card_name.toLowerCase()][rarity];
+          aetherDiv.innerHTML = aether_value;
+          console.log(aether_value);
+          console.log(clean_price);
+          console.log((parseFloat(aether_value)));
+          // debugger;
+          ratioDiv.innerHTML = (clean_price/ (parseFloat(aether_value.toString().replace(',','')))).toFixed(1)+" : 1";
+          aetherDiv.style.position = "absolute";
+          aetherDiv.style.margin = "auto";
+          aetherDiv.style.left = 0;
+          aetherDiv.style.right = 0;
+          aetherDiv.style.top = "-3.5px";
+          aetherDiv.style.letterSpacing = "2px";
+          aetherDiv.style.fontSize = "12px";
+          aetherDiv.style.fontWeight = 900;
+          ratioDiv.style.position = "absolute";
+          ratioDiv.style.margin = "auto";
+          ratioDiv.style.left = 0;
+          ratioDiv.style.right = 0;
+          ratioDiv.style.top = "-18.5px";
+          ratioDiv.style.letterSpacing = "2px";
+          ratioDiv.style.fontSize = "12px";
+          ratioDiv.style.fontWeight = 900;
+          ratioDiv.style.color = "#42ba67";
+          // ratioDiv.style.textShadow = "0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black";
         }
       }
     }
