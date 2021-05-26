@@ -936,8 +936,49 @@ function injectTable() {
       "Epic": "19,136",
       "Legendary": "39,866.8",
       "Mythic": "159,466"
+    },
+    "money": {
+      "Common": "5,461",
+      "Uncommon": "16,384",
+      "Rare": "32,768",
+      "Epic": "32,768",
+      "Legendary": "136,531",
+      "Mythic": "546,125"
+    },
+    "block": {
+      "Common": "95",
+      "Uncommon": "285",
+      "Rare": "570",
+      "Epic": "1,140",
+      "Legendary": "2,375",
+      "Mythic": "9,500"
+    },
+    "blockchain": {
+      "Common": "413.75",
+      "Uncommon": "1,241.25",
+      "Rare": "2,482.5",
+      "Epic": "4,965",
+      "Legendary": "10,343.75",
+      "Mythic": "41,375"
+    },
+    "broom": {
+      "Common": "413.75",
+      "Uncommon": "1,241.25",
+      "Rare": "2,482.5",
+      "Epic": "4,965",
+      "Legendary": "10,343.75",
+      "Mythic": "41,375"
     }
   }
+  let rigJSON = {
+    "Common": "150",
+    "Uncommon": "250",
+    "Rare": "400",
+    "Epic": "800",
+    "Legendary": "5,000",
+    "Mythic": "10,000"
+  }
+  // debugger;
   function updateListener(){
     const targetNode = document.getElementsByClassName('MobileCardDesign')[0];
     // Options for the observer (which mutations to observe)
@@ -984,27 +1025,35 @@ function injectTable() {
            var rarity = "nil"
             break;
         }
-        if (elementJSON[card_name.toLowerCase()]) {
-          parent = cardList[i].children[0].children[0].children[0];
-          var aetherDiv = document.createElement('div');
+        switch (raw_img_url) {
+          case (raw_img_url.match(/Frigs/) || {}).input:
+           var rig = true
+            break;
+          default:
+           var rig = false
+            break;
+        }
+        if (elementJSON[card_name.toLowerCase()] || (rig==true)) {
+          var parent = cardList[i].children[0].children[0].children[0];
+          if (rig == true){
+            aether_value = rigJSON[rarity];
+          } else {
+            aether_value = elementJSON[card_name.toLowerCase()][rarity];
+            var aetherDiv = document.createElement('div');
+            parent.appendChild(aetherDiv);
+            aetherDiv.innerHTML = aether_value;
+            aetherDiv.style.position = "absolute";
+            aetherDiv.style.margin = "auto";
+            aetherDiv.style.left = 0;
+            aetherDiv.style.right = 0;
+            aetherDiv.style.top = "-3.5px";
+            aetherDiv.style.letterSpacing = "2px";
+            aetherDiv.style.fontSize = "12px";
+            aetherDiv.style.fontWeight = 900;
+          };
           var ratioDiv = document.createElement('div');
-          parent.appendChild(aetherDiv);
           parent.appendChild(ratioDiv);
-          aether_value = elementJSON[card_name.toLowerCase()][rarity];
-          aetherDiv.innerHTML = aether_value;
-          console.log(aether_value);
-          console.log(clean_price);
-          console.log((parseFloat(aether_value)));
-          // debugger;
           ratioDiv.innerHTML = (clean_price/ (parseFloat(aether_value.toString().replace(',','')))).toFixed(1)+" : 1";
-          aetherDiv.style.position = "absolute";
-          aetherDiv.style.margin = "auto";
-          aetherDiv.style.left = 0;
-          aetherDiv.style.right = 0;
-          aetherDiv.style.top = "-3.5px";
-          aetherDiv.style.letterSpacing = "2px";
-          aetherDiv.style.fontSize = "12px";
-          aetherDiv.style.fontWeight = 900;
           ratioDiv.style.position = "absolute";
           ratioDiv.style.margin = "auto";
           ratioDiv.style.left = 0;
@@ -1014,8 +1063,7 @@ function injectTable() {
           ratioDiv.style.fontSize = "12px";
           ratioDiv.style.fontWeight = 900;
           ratioDiv.style.color = "#42ba67";
-          // ratioDiv.style.textShadow = "0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black";
-        }
+        } 
       }
     }
   }
