@@ -968,6 +968,86 @@ function injectTable() {
       "Epic": "4,965",
       "Legendary": "10,343.75",
       "Mythic": "41,375"
+    },
+    "frost": {
+      "Common": "50",
+      "Uncommon": "150",
+      "Rare": "300",
+      "Epic": "600",
+      "Legendary": "1,250",
+      "Mythic": "5,000"
+    },
+    "ice": {
+      "Common": "53.75",
+      "Uncommon": "161.25",
+      "Rare": "322.50",
+      "Epic": "645",
+      "Legendary": "1,343.75",
+      "Mythic": "5,375"
+    },
+    "fridge": {
+      "Common": "365",
+      "Uncommon": "1,095",
+      "Rare": "2,190",
+      "Epic": "4,380",
+      "Legendary": "9,125",
+      "Mythic": "36,500"
+    },
+    "mirror": {
+      "Common": "556.25",
+      "Uncommon": "1,668.75",
+      "Rare": "3,337.5",
+      "Epic": "6,675",
+      "Legendary": "13,906.25",
+      "Mythic": "55,625"
+    },
+    "graphite": {
+      "Common": "42.5",
+      "Uncommon": "127.50",
+      "Rare": "255",
+      "Epic": "510",
+      "Legendary": "1,062.50",
+      "Mythic": "4,250"
+    },
+    "pencil": {
+      "Common": "661.25",
+      "Uncommon": "1,983.75",
+      "Rare": "3,967.5",
+      "Epic": "7,935",
+      "Legendary": "16,531.25",
+      "Mythic": "66,125"
+    },
+    "book": {
+      "Common": "800",
+      "Uncommon": "2,400",
+      "Rare": "4,800",
+      "Epic": "9,600",
+      "Legendary": "20,000",
+      "Mythic": "80,000"
+    },
+    "battery": {
+      "Common": "440",
+      "Uncommon": "1,320",
+      "Rare": "2,640",
+      "Epic": "5,280",
+      "Legendary": "11,000",
+      "Mythic": "44,000"
+    },
+    "flashlight": {
+      "Common": "1,006.25",
+      "Uncommon": "3,018.75",
+      "Rare": "6,037.50",
+      "Epic": "12,075",
+      "Legendary": "25,156.25",
+      "Mythic": "100,625"
+    },
+    "painting": {
+      "Common": "1,407.50",
+      "Uncommon": "4,222.50",
+      "Rare": "8,445",
+      "Epic": "16,890",
+      "Legendary": "35,187.50",
+      "Mythic": "140,750"
     }
   }
   let rigJSON = {
