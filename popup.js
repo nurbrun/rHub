@@ -1080,6 +1080,78 @@ function injectTable() {
       "Epic": "4,695",
       "Legendary": "9,781.25",
       "Mythic": "39,125"
+    },
+    "hill": {
+      "Common": "177.5",
+      "Uncommon": "532.5",
+      "Rare": "1,065",
+      "Epic": "2,130",
+      "Legendary": "4,437.5",
+      "Mythic": "17,750"
+    },
+    "kite": {
+      "Common": "586.25",
+      "Uncommon": "1,758.75",
+      "Rare": "3,517.5",
+      "Epic": "7,035",
+      "Legendary": "14,656.25",
+      "Mythic": "58,625"
+    },
+    "tiling": {
+      "Common": "170",
+      "Uncommon": "510",
+      "Rare": "1,020",
+      "Epic": "2,040",
+      "Legendary": "4,250",
+      "Mythic": "17,000"
+    },
+    "hammer": {
+      "Common": "365",
+      "Uncommon": "1,095",
+      "Rare": "2,190",
+      "Epic": "4,380",
+      "Legendary": "9,125",
+      "Mythic": "36,500"
+    },
+    "seaweed": {
+      "Common": "173.75",
+      "Uncommon": "512.25",
+      "Rare": "1,042.5",
+      "Epic": "2,085",
+      "Legendary": "4,343.75",
+      "Mythic": "17,375"
+    },
+    "stool": {
+      "Common": "646.25",
+      "Uncommon": "1,938.75",
+      "Rare": "3,877.5",
+      "Epic": "7,755",
+      "Legendary": "16,156.25",
+      "Mythic": "64,625"
+    },
+    "gas": {
+      "Common": "113.75",
+      "Uncommon": "341.25",
+      "Rare": "682.5",
+      "Epic": "1,365",
+      "Legendary": "2,843.75",
+      "Mythic": "11,375"
+    },
+    "bubbles": {
+      "Common": "121.25",
+      "Uncommon": "363.75",
+      "Rare": "727.5",
+      "Epic": "1,455",
+      "Legendary": "3,031.25",
+      "Mythic": "12,125"
+    },
+    "soda": {
+      "Common": "222.5",
+      "Uncommon": "667.5",
+      "Rare": "1,335",
+      "Epic": "2,670",
+      "Legendary": "5,562.5",
+      "Mythic": "22,250"
     }
   }
   let rigJSON = {
