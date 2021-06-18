@@ -1152,6 +1152,30 @@ function injectTable() {
       "Epic": "2,670",
       "Legendary": "5,562.5",
       "Mythic": "22,250"
+    },
+    "pickax": {
+      "Common": "286.25",
+      "Uncommon": "858.75",
+      "Rare": "1,717.5",
+      "Epic": "3,435",
+      "Legendary": "7,156.25",
+      "Mythic": "28,625"
+    },
+    "peat": {
+      "Common": "158.75",
+      "Uncommon": "476.25",
+      "Rare": "952.5",
+      "Epic": "1,905",
+      "Legendary": "3,968.75",
+      "Mythic": "15,875"
+    },
+    "nft": {
+      "Common": "7,403.75",
+      "Uncommon": "22,211.25",
+      "Rare": "44,422.5",
+      "Epic": "88,845",
+      "Legendary": "185,093.75",
+      "Mythic": "740,375"
     }
   }
   let rigJSON = {
