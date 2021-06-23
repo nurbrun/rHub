@@ -1184,6 +1184,22 @@ function injectTable() {
       "Epic": "2,490",
       "Legendary": "5,187.50",
       "Mythic": "20,750"
+    },
+    "bacteria": {
+      "Common": "72.50",
+      "Uncommon": "217.50",
+      "Rare": "435",
+      "Epic": "870",
+      "Legendary": "1,812.50",
+      "Mythic": "7,250"
+    },
+    "petri dish": {
+      "Common": "256.25",
+      "Uncommon": "768.75",
+      "Rare": "1,537.50",
+      "Epic": "3,075",
+      "Legendary": "6,406.25",
+      "Mythic": "25,625"
     }
   }
   let rigJSON = {
