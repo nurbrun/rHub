@@ -1200,6 +1200,78 @@ function injectTable() {
       "Epic": "3,075",
       "Legendary": "6,406.25",
       "Mythic": "25,625"
+    },
+    "kettle": {
+      "Common": "267.50",
+      "Uncommon": "802.50",
+      "Rare": "1,605",
+      "Epic": "3,210",
+      "Legendary": "6,687",
+      "Mythic": "26,750"
+    },
+    "seed": {
+      "Common": "151.25",
+      "Uncommon": "453.75",
+      "Rare": "907.50",
+      "Epic": "1,815",
+      "Legendary": "3,781.25",
+      "Mythic": "15,125"
+    },
+    "grape": {
+      "Common": "410",
+      "Uncommon": "1,230",
+      "Rare": "2,460",
+      "Epic": "4,920",
+      "Legendary": "10,250",
+      "Mythic": "41,000"
+    },
+    "sunflower": {
+      "Common": "248.75",
+      "Uncommon": "746.25",
+      "Rare": "1,492.50",
+      "Epic": "2,985",
+      "Legendary": "6,218.75",
+      "Mythic": "24,875"
+    },
+    "wire": {
+      "Common": "350",
+      "Uncommon": "1,050",
+      "Rare": "2,100",
+      "Epic": "4,200",
+      "Legendary": "8,750",
+      "Mythic": "35,000"
+    },
+    "oil": {
+      "Common": "597.50",
+      "Uncommon": "1,792.50",
+      "Rare": "3,585",
+      "Epic": "7,170",
+      "Legendary": "14,937.50",
+      "Mythic": "59,750.00"
+    },
+    "salad": {
+      "Common": "657.50",
+      "Uncommon": "1,972.50",
+      "Rare": "3,945",
+      "Epic": "7,890",
+      "Legendary": "16,437.50",
+      "Mythic": "65,750"
+    },
+    "string": {
+      "Common": "657.50",
+      "Uncommon": "1,972.50",
+      "Rare": "3,945",
+      "Epic": "7,890",
+      "Legendary": "16,437.50",
+      "Mythic": "65,750"
+    },
+    "piano": {
+      "Common": "2,453.75",
+      "Uncommon": "7,361.25",
+      "Rare": "14,722.50",
+      "Epic": "29,445",
+      "Legendary": "61,343.75",
+      "Mythic": "245,375"
     }
   }
   let rigJSON = {
