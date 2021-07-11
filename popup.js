@@ -1288,6 +1288,46 @@ function injectTable() {
       "Epic": "4,650",
       "Legendary": "9,687.50",
       "Mythic": "38,750"
+    },
+    "crude": {
+      "Common": "125",
+      "Uncommon": "375",
+      "Rare": "750",
+      "Epic": "1,500",
+      "Legendary": "3,125",
+      "Mythic": "12,500"
+    },
+    "plastic": {
+      "Common": "248.75",
+      "Uncommon": "746.25",
+      "Rare": "1,492.50",
+      "Epic": "2,985",
+      "Legendary": "6,218.75",
+      "Mythic": "24,875"
+    },
+    "drum": {
+      "Common": "612.50",
+      "Uncommon": "1,837.50",
+      "Rare": "3,675",
+      "Epic": "7,350",
+      "Legendary": "15,312.50",
+      "Mythic": "61,250"
+    },
+    "scissors": {
+      "Common": "548.75",
+      "Uncommon": "1,646.25",
+      "Rare": "3,292.50",
+      "Epic": "6,585",
+      "Legendary": "13,718.75",
+      "Mythic": "54,875"
+    },
+    "gasoline": {
+      "Common": "140",
+      "Uncommon": "420",
+      "Rare": "840",
+      "Epic": "1,680",
+      "Legendary": "3,500",
+      "Mythic": "14,000"
     }
   }
   let rigJSON = {
