@@ -1336,6 +1336,30 @@ function injectTable() {
       "Epic": "7,035",
       "Legendary": "14,656.25",
       "Mythic": "58,625"
+    },
+    "backpack ": {
+      "Common": "2,225",
+      "Uncommon": "6,675",
+      "Rare": "13,350",
+      "Epic": "26,700",
+      "Legendary": "55,625",
+      "Mythic": "222,500"
+    },
+    "t-shirt ": {
+      "Common": "2,112.50",
+      "Uncommon": "6,338",
+      "Rare": "12,675",
+      "Epic": "25,350",
+      "Legendary": "52,812.5",
+      "Mythic": "211,250"
+    },
+    "marker ": {
+      "Common": "1,160",
+      "Uncommon": "3,480",
+      "Rare": "6,960",
+      "Epic": "13,920",
+      "Legendary": "29,000",
+      "Mythic": "116,000"
     }
   }
   let rigJSON = {
@@ -1369,7 +1393,6 @@ function injectTable() {
         var card_name = cardList[i].children[1].children[1].children[0].innerText
         var raw_price = cardList[i].children[1].children[1].children[1].innerText
         var clean_price = parseFloat(raw_price.split("WAX")[0]);
-        console.log(clean_price);
         switch (raw_img_url) {
           case (raw_img_url.match(/uncommon/) || {}).input:
            var rarity = "Uncommon"
