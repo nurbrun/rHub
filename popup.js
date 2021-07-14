@@ -1337,7 +1337,7 @@ function injectTable() {
       "Legendary": "14,656.25",
       "Mythic": "58,625"
     },
-    "backpack ": {
+    "backpack": {
       "Common": "2,225",
       "Uncommon": "6,675",
       "Rare": "13,350",
@@ -1345,7 +1345,7 @@ function injectTable() {
       "Legendary": "55,625",
       "Mythic": "222,500"
     },
-    "t-shirt ": {
+    "t-shirt": {
       "Common": "2,112.50",
       "Uncommon": "6,338",
       "Rare": "12,675",
@@ -1353,7 +1353,7 @@ function injectTable() {
       "Legendary": "52,812.5",
       "Mythic": "211,250"
     },
-    "marker ": {
+    "marker": {
       "Common": "1,160",
       "Uncommon": "3,480",
       "Rare": "6,960",
