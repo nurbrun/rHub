@@ -1369,7 +1369,7 @@ function injectTable() {
       "Legendary": "14,937.5",
       "Mythic": "59,750"
     }
-  }
+  };
   let rigJSON = {
     "Common": "150",
     "Uncommon": "250",
@@ -1377,7 +1377,8 @@ function injectTable() {
     "Epic": "800",
     "Legendary": "5,000",
     "Mythic": "10,000"
-  }
+  };
+  let roundVar = 2;
   // debugger;
   function updateListener(){
     const targetNode = document.getElementsByClassName('MobileCardDesign')[0];
@@ -1385,14 +1386,14 @@ function injectTable() {
     const config = {childList: true};
     // Callback function to execute when mutations are observed
     const callback = function(mutationsList, observer) {
-      populatePage()
+      populatePage(roundVar)
     };
     // Create an observer instance linked to the callback function
     const observer = new MutationObserver(callback);
     // Start observing the target node for configured mutations
     observer.observe(targetNode, config);
   };
-  function populatePage(){
+  function populatePage(roundVar){
     // Itterate through html cards
     let cardList = document.getElementsByClassName("large-card");
     for (let i = 0; i < cardList.length; i++) {
@@ -1452,7 +1453,7 @@ function injectTable() {
           };
           var ratioDiv = document.createElement('div');
           parent.appendChild(ratioDiv);
-          ratioDiv.innerHTML = (clean_price/ (parseFloat(aether_value.toString().replace(',','')))).toFixed(1)+" : 1";
+          ratioDiv.innerHTML = (clean_price/ (parseFloat(aether_value.toString().replace(',','')))).toFixed(roundVar)+" : 1";
           ratioDiv.style.position = "absolute";
           ratioDiv.style.margin = "auto";
           ratioDiv.style.left = 0;
@@ -1466,6 +1467,6 @@ function injectTable() {
       }
     }
   }
-  populatePage();
+  populatePage(roundVar);
   updateListener();
 }
