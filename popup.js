@@ -1368,6 +1368,30 @@ function injectTable() {
       "Epic": "7,170",
       "Legendary": "14,937.5",
       "Mythic": "59,750"
+    },
+    "cement": {
+      "Common": "770",
+      "Uncommon": "2,310",
+      "Rare": "4,620",
+      "Epic": "9,240",
+      "Legendary": "19,250",
+      "Mythic": "77,000"
+    },
+    "concrete": {
+      "Common": "841.25",
+      "Uncommon": "2,523.75",
+      "Rare": "5,047.50",
+      "Epic": "10,095",
+      "Legendary": "21,031.25",
+      "Mythic": "84,125"
+    },
+    "building": {
+      "Common": "1,066.25",
+      "Uncommon": "3,198.75",
+      "Rare": "6,397.50",
+      "Epic": "12,795",
+      "Legendary": "26,656.25",
+      "Mythic": "106,625"
     }
   };
   let rigJSON = {
