@@ -1392,6 +1392,14 @@ function injectTable() {
       "Epic": "12,795",
       "Legendary": "26,656.25",
       "Mythic": "106,625"
+    },
+    "library": {
+      "Common": "3,732.5",
+      "Uncommon": "11,197.5",
+      "Rare": "22,395",
+      "Epic": "44,790",
+      "Legendary": "93,312.5",
+      "Mythic": "373,250"
     }
   };
   let rigJSON = {
