@@ -16,11 +16,14 @@ p{
 }
 #topExt{
 	width: 250px;
+	text-align: left;
 }
 #bottomExt{
 	width: 250px;
-	height: 85px;
+	/*height: 85px;*/
 	display: flex;
+	position: relative;
+	top: -50px;
 }
 .magic{
 	color: #f076db;
@@ -83,3 +86,9 @@ p{
 	transform: translate3d(0, 0, -1em);
 }
 /*end https://codepen.io/kathykato/pen/gOOjgmP*/
+#topExt{
+	text-align: center;
+}
+.image-button-section{
+	margin-top: 20px;
+}

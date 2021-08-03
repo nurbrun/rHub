@@ -1425,6 +1425,22 @@ function injectTable() {
     // Start observing the target node for configured mutations
     observer.observe(targetNode, config);
   };
+  function fixRlanet(roundVar){
+    let rplanetContainer = document.getElementsByClassName("MobileInDesktopLayout_container__3KxSf")[0];
+    rplanetContainer.style.width = "100%";
+    let labContainer = document.getElementsByClassName("LabPage_container__2IrqZ")[0];
+    labContainer.style.display = "flex";
+    labContainer.style.flexDirection = "row-reverse";
+    let cauldronContainer = document.getElementsByClassName("LabPage_cauldron__3pD-e")[0];
+    cauldronContainer.style.top = 0;
+    cauldronContainer.style.bottom = 0;
+    cauldronContainer.style.margin = "auto";
+    let elementsContainer = document.getElementsByClassName("LabPage_tabs__286Hr")[0];
+    elementsContainer.style.height = "98%";
+    elementsContainer.style.margin = "auto";
+    let tabToggle = document.getElementsByClassName("LabPage_tabUp__3Nwvl")[0];
+    tabToggle.style.display = "none";
+  }
   function populatePage(roundVar){
     // Itterate through html cards
     let cardList = document.getElementsByClassName("large-card");
@@ -1499,6 +1515,11 @@ function injectTable() {
       }
     }
   }
-  populatePage(roundVar);
-  updateListener();
+  if (window.location.origin == "https://wax.atomichub.io") {
+    populatePage(roundVar);
+    updateListener();    
+  } else {
+      fixRlanet();    
+  }
+
 }
