@@ -1425,6 +1425,21 @@ function injectTable() {
     // Start observing the target node for configured mutations
     observer.observe(targetNode, config);
   };
+  function updaterPlanetListener(){
+    const targetNode = document.getElementsByClassName('LabPage_container__2IrqZ')[0];
+    // Options for the observer (which mutations to observe)
+    const config = {attributes: true, childList: true, subtree: true};
+    // Callback function to execute when mutations are observed
+    const callback = function(mutationsList, observer) {
+      console.log('observed')  
+      fixRlanet();
+        
+    };
+    // Create an observer instance linked to the callback function
+    const observer = new MutationObserver(callback);
+    // Start observing the target node for configured mutations
+    observer.observe(targetNode, config);
+  };
   function fixRlanet(roundVar){
     let rplanetContainer = document.getElementsByClassName("MobileInDesktopLayout_container__3KxSf")[0];
     rplanetContainer.style.width = "100%";
@@ -1519,7 +1534,8 @@ function injectTable() {
     populatePage(roundVar);
     updateListener();    
   } else {
-      fixRlanet();    
+    fixRlanet();
+    updaterPlanetListener();    
   }
 
 }
