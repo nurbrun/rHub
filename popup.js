@@ -1401,7 +1401,7 @@ function injectTable() {
       "Legendary": "93,312.5",
       "Mythic": "373,250"
     },
-    "sulfer": {
+    "sulfur": {
       "Common": "166.25",
       "Uncommon": "498.75",
       "Rare": "997.50",
