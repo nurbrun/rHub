@@ -1408,6 +1408,14 @@ function injectTable() {
       "Epic": "1,995",
       "Legendary": "4,156.25",
       "Mythic": "16,625"
+    },
+    "aluminum": {
+      "Common": "260",
+      "Uncommon": "780",
+      "Rare": "1,560",
+      "Epic": "3,120",
+      "Legendary": "6,500",
+      "Mythic": "26,000"
     }
   };
   let rigJSON = {
@@ -1521,6 +1529,7 @@ function injectTable() {
             aetherDiv.style.letterSpacing = "2px";
             aetherDiv.style.fontSize = "12px";
             aetherDiv.style.fontWeight = 900;
+            aetherDiv.style.textAlign = "center";
           };
           var ratioDiv = document.createElement('div');
           parent.appendChild(ratioDiv);
@@ -1534,6 +1543,7 @@ function injectTable() {
           ratioDiv.style.fontSize = "12px";
           ratioDiv.style.fontWeight = 900;
           ratioDiv.style.color = "#42ba67";
+          ratioDiv.style.textAlign = "center";
         } 
       }
     }
